@@ -1,0 +1,89 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #fff;
+}
+
+/* helpers */
+.mr-20 {
+	margin-right: 20px;
+}
+/* /helpers */
+
+.navbar {
+	padding: .5rem 4rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 2rem;
+}
+
+.billboard {
+	margin-top: 100px;
+}
+
+.billboard .slogan {
+	margin-top: 65px;
+}
+
+.billboard .slogan h1 {
+	font-size: 3.5rem;
+	line-height: 4.8rem;
+	font-weight: 300;
+}
+
+.billboard .slogan h1 b {
+	font-weight: 500;
+}
+
+.billboard .call-to-action {
+	margin-top: 60px;
+}
+
+.col-4-custom {
+	width: 33%;
+}
+
+.billboard img {
+	/*max-width: 100%;*/
+	max-width: 120%;
+    /*margin-left: -100px;*/
+    margin-top: -15px;
+}
+
+.btn-lightBlue {
+	background: rgba(55, 125, 255, 0.1);
+	border-color: transparent;
+}
+
+#novias {
+	text-align: center;
+	background: rgba(55, 125, 255, 0.1);
+	margin: 5rem 0;
+	padding: 5rem 0 0 0;
+}
+
+h2.title {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 100;
+}
+
+h5 {
+	color: #222;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+.gallery-block {
+	padding-bottom: 0;
+}
+
+
+.gallery-block .item {
+	max-height: 300px;
+}
