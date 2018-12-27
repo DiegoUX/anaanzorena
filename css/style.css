@@ -12,6 +12,10 @@ body {
 .mr-20 {
 	margin-right: 20px;
 }
+
+.mt-30 {
+	margin-top: 30px;
+}
 /* /helpers */
 
 .navbar {
@@ -63,8 +67,8 @@ body {
 #novias {
 	text-align: center;
 	background: rgba(55, 125, 255, 0.1);
-	margin: 5rem 0;
-	padding: 5rem 0 0 0;
+	/*margin: 5rem 0 0 0;*/
+	padding: 5rem 0 2rem 0;
 }
 
 h2.title {
@@ -87,3 +91,26 @@ h5 {
 .gallery-block .item {
 	max-height: 300px;
 }
+
+.found_fb {
+	/*background: #f5f5f5;*/
+	background: rgba(55, 125, 255, 0.1);
+	text-align: center;
+	padding: 2rem 0 5rem 0;
+}
+
+.found_fb h2 {
+	font-weight: 100;
+}
+
+.found_fb h2 b {
+	font-weight: 500;
+}
+
+.found_fb p {
+	margin: 1.2rem 0;
+}
+
+/*.found_fb .bg-filled {
+	background: rgba(55, 125, 255, 0.1);
+}*/
