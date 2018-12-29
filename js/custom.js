@@ -12,3 +12,13 @@ $(function () {
   $('.carousel').carousel();
 })
 
+/*Smooth Scroll*/
+$(document).ready( function() { 
+  $('.smooth a').smoothScroll({
+  	speed: 'auto',
+  	offset:-100,
+    // afterScroll: function() {
+    //   location.hash = $(this).attr('href');
+    // }
+  });
+});
