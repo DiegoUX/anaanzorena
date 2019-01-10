@@ -16,7 +16,7 @@ $(function () {
 $(document).ready( function() { 
   $('.smooth a').smoothScroll({
   	speed: 'auto',
-  	offset:-70,
+  	offset:-25,
     // afterScroll: function() {
     //   location.hash = $(this).attr('href');
     // }

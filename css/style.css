@@ -119,17 +119,18 @@ h5 {
 	padding: 2rem 0 5rem 0;
 }
 
-.found_fb h2 {
-	font-size: 3rem;
+.found_fb h3 {
+	font-size: 2.5rem;
 	font-weight: 100;
 }
 
-.found_fb h2 b {
+.found_fb h2 b,
+.paym b {
 	font-weight: 500;
 }
 
 .found_fb p {
-	margin: 1.2rem 0;
+	margin: 1.2rem 0 2rem 0;
 }
 
 /*.found_fb .bg-filled {
@@ -247,6 +248,33 @@ h5 {
 	padding-top: 40px;
 }
 
+.carousel .carousel-indicators {
+    bottom: -50px;
+}
+
+/*.carousel .carousel-indicators li {
+	background-color: #333;
+}*/
+
+
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #e2e2e2;
+	border-color: transparent;
+	box-sizing: border-box;
+	border-bottom: 0;
+}
+.carousel-indicators li.active {
+	border: none;
+	background: #888;		
+}
+
+
 /*Icons*/
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -267,6 +295,13 @@ h5 {
 .contact-form .help-block.with-errors {
     color: #ff5050;
     margin-top: 5px;
+}
+
+.req-fields {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 0.9rem;
 }
 
 /* Contact Info */
@@ -304,9 +339,26 @@ h5 {
 
 footer {
 	background-color: #000000;
+	padding-bottom: 0 !important;
 }
 
 footer .title {
 	color: #FFFFFF;
 	margin-bottom: 60px;
+}
+
+.foo {
+	color: #999999;
+	font-size: 0.8rem;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid #999999;
+}
+
+.foo img {
+	width: 120px;
+}
+
+.foo p {
+	margin-top: 10px;
 }
