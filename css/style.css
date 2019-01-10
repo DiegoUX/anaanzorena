@@ -15,6 +15,10 @@ body {
 	margin-right: 20px;
 }
 
+.mb-20 {
+	margin-bottom: 20px;
+}
+
 .mt-30 {
 	margin-top: 30px;
 }
@@ -31,6 +35,14 @@ body {
 
 .navbar {
 	padding: .5rem 4rem;
+}
+
+.navbar .navbar-brand {
+	width: 130px;
+}
+
+.navbar .navbar-brand img {
+	width: 100%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -124,8 +136,7 @@ h5 {
 	background: rgba(55, 125, 255, 0.1);
 }*/
 
-#school,
-#celebrities {
+.section-padding {
 	padding: 5rem 0;
 }
 
@@ -219,6 +230,11 @@ h5 {
     margin-bottom: 1.25rem;
 }
 
+.paym {
+	padding: 5rem 0;
+	background-color: #EAF2FF;
+}
+
 #celebrities {
 	background: #F5F5F5;
 }
@@ -227,8 +243,70 @@ h5 {
 	margin: 0 2rem;
 }
 
+.carousel {
+	padding-top: 40px;
+}
+
 /*Icons*/
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+
+
+/* Contact form*/
+
+.contact-form label {
+	color: #999999;
+}
+
+.contact-form .form-control {
+	font-size: 0.9rem;
+}
+
+.contact-form .help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+}
+
+/* Contact Info */
+.contact-info {
+	color: #999999;
+}
+
+.contact-info i {
+	font-size: 1.25rem;
+	margin-right: 10px;
+	color: #ffffff;
+}
+
+.contact-info .ablock {
+	display: inline-grid;
+}
+
+.contact-info .ablock span {
+	display: block;
+}
+
+.block-info {
+	margin-bottom: 20px;
+}
+
+.block-info span a {
+	color: #999999;
+	text-decoration: underline;
+}
+
+.block-info span a:hover {
+	text-decoration: none;
+}
+
+
+footer {
+	background-color: #000000;
+}
+
+footer .title {
+	color: #FFFFFF;
+	margin-bottom: 60px;
+}
