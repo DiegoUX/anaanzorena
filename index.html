@@ -15,6 +15,7 @@
 
     <link rel="shortcut icon" href="images/favicon_16x16.ico" type="image/ico" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -25,13 +26,18 @@
     <link rel="stylesheet" href="css/compact-gallery.css">
     <link rel="stylesheet" href="css/offcanvas.css">
     <link rel="stylesheet" type="text/css" href="css/totop.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
 
   </head>   
   <body id="body">
      <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light smooth">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light smooth">
             <a class="navbar-brand mr-auto mr-lg-0" href="#body"><img src="images/logo-negro.png"></a>
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
               <span class="navbar-toggler-icon"></span>
@@ -54,6 +60,15 @@
                 <li class="nav-item smooth">
                   <a class="nav-link" href="#contact">Contacto</a>
                 </li>
+                <li class="social-nav fst-social">
+                  <a class="nav-link" target="_blank" href="https://www.facebook.com/ana.anzorena.9?fref=ts"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="social-nav">
+                  <a class="nav-link" target="_blank" href="https://www.instagram.com/anaanzorena/"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="social-nav">
+                  <a class="nav-link" target="_blank" href="https://twitter.com/anaanzorena?lang=es"><i class="fab fa-twitter"></i></a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -66,19 +81,22 @@
     <main role="main" class="billboard">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-lg-8 offset-lg-1">
             <div class="slogan">
               <!-- <h1>Te ayudamos a encontrar y destacar aquello que <br><b>te hace única.</b></h1> -->
-              <h1>Con el <b>Método Anzorena</b> te ayudamos a encontrar y destacar aquello que te hace única</h1>
+              <h1>Descubrí eso <br>que te hace <b>única</b></h1>
+              <h3>Con el <b>Método Anzorena</b> te ayudamos a encontrar<br> y destacar eso que te hace única ¿Querés conocernos?</h3>
             </div>
             <div class="call-to-action smooth">
-              <a href="#contact" class="btn btn-lg btn-dark mr-20" onclick="select_default();">Contactanos</a>
-              <a target="_blank" href="https://www.facebook.com/ana.anzorena.9?fref=ts" class="btn btn-lg btn-outline-primary btn-lightBlue">Encontranos en <b>Facebook!</b></a>
+              <a href="#contact" class="btn-main btn btn-outline-primary" onclick="select_default();">Escribinos un mensaje</a>
             </div>
           </div>
-          <div class="col-4-custom">
-            <img src="images/main-photo.png">
-          </div>  
+          
+          <div class="col-sm-3">
+            <div class="main-img">
+              <img src="images/main-photo.png">
+            </div>  
+          </div>
         </div>  
       </div>
     </main>
@@ -87,9 +105,9 @@
     <section id="brides" class="tac">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-lg-10 offset-lg-1">
             <h2 class="title">Novias</h2>
-            <h5>Nuestro compromiso es destacar lo mejor de tu estilo respetando tu personalidad. Te ofrecemos un trato personalizado asesorándote en todo momento para adaptar tu maquillaje según tus gustos y necesidades. Utilizamos productos de alta calidad y tecnología que garantizan alta durabilidad y son dermatológicamente testeados.</h5>
+            <h5>Nuestro compromiso es destacar lo mejor de tu estilo y respetar tu personalidad.<br>Te ofrecemos un trato personalizado asesorándote en todo momento para adaptar el maquillaje a tus gustos y necesidades. Trabajamos con productos de excelente calidad y tecnología, garantizando la más alta durabilidad. Todos son dermatológicamente seguros.</h5>
           </div>
         </div>
       </div>
@@ -97,38 +115,38 @@
       <div class="gallery-block compact-gallery">
           <div class="row no-gutters">
               <div class="col-md-6 col-lg-3 item zoom-on-hover">
-                  <a class="lightbox" href="http://anaanzorena.com/img/novias/216047_4134107386484_116964319_n.jpg">
-                      <img class="img-fluid image" src="http://anaanzorena.com/img/novias/216047_4134107386484_116964319_n.jpg">
+                  <a class="lightbox" href="images/novias/foto-novias-1.jpg">
+                      <img class="img-fluid image" src="images/novias/foto-novias-1.jpg">
                   </a>
               </div>
               <div class="col-md-6 col-lg-3 item zoom-on-hover">
-                  <a class="lightbox" href="http://anaanzorena.com/img/novias/182553_362021723864576_858756705_n.jpg">
-                      <img class="img-fluid image" src="http://anaanzorena.com/img/novias/182553_362021723864576_858756705_n.jpg">
+                  <a class="lightbox" href="images/novias/foto-novias-2.jpg">
+                      <img class="img-fluid image" src="images/novias/foto-novias-2.jpg">
                   </a>
               </div>
               <div class="col-md-6 col-lg-3 item zoom-on-hover">
-                  <a class="lightbox" href="http://anaanzorena.com/img/novias/525540_3412685551389_2136257780_n.jpg">
-                      <img class="img-fluid image" src="http://anaanzorena.com/img/novias/525540_3412685551389_2136257780_n.jpg">
+                  <a class="lightbox" href="images/novias/foto-novias-3.jpg">
+                      <img class="img-fluid image" src="images/novias/foto-novias-3.jpg">
                   </a>
               </div>
               <div class="col-md-6 col-lg-3 item zoom-on-hover">
-                  <a class="lightbox" href="http://anaanzorena.com/img/novias/293848_3905441469979_50720388_n.jpg">
-                      <img class="img-fluid image" src="http://anaanzorena.com/img/novias/293848_3905441469979_50720388_n.jpg">
+                  <a class="lightbox" href="images/novias/foto-novias-4.jpg">
+                      <img class="img-fluid image" src="images/novias/foto-novias-4.jpg">
                   </a>
                   </div>
               <div class="col-md-6 col-lg-3 item zoom-on-hover">
-                  <a class="lightbox" href="http://anaanzorena.com/img/novias/2079_1080883897805_9931_n.jpg">
-                      <img class="img-fluid image" src="http://anaanzorena.com/img/novias/2079_1080883897805_9931_n.jpg">
+                  <a class="lightbox" href="images/novias/foto-novias-5.jpg">
+                      <img class="img-fluid image" src="images/novias/foto-novias-5.jpg">
                   </a>
               </div>
               <div class="col-md-6 col-lg-3 item zoom-on-hover">
-                  <a class="lightbox" href="http://anaanzorena.com/img/novias/538794_3573557853096_991420955_n.jpg">
-                      <img class="img-fluid image" src="http://anaanzorena.com/img/novias/538794_3573557853096_991420955_n.jpg">
+                  <a class="lightbox" href="images/novias/foto-novias-6.jpg">
+                      <img class="img-fluid image" src="images/novias/foto-novias-6.jpg">
                   </a>
               </div>
               <div class="col-md-6 col-lg-3 item zoom-on-hover">
-                  <a class="lightbox" href="http://anaanzorena.com/img/novias/2079_1080883977807_453_n.jpg">
-                      <img class="img-fluid image" src="http://anaanzorena.com/img/novias/2079_1080883977807_453_n.jpg">
+                  <a class="lightbox" href="images/novias/foto-novias-7.jpg">
+                      <img class="img-fluid image" src="images/novias/foto-novias-7.jpg">
                   </a>
               </div>
               <div class="col-md-6 col-lg-3 item zoom-on-hover">
@@ -141,20 +159,23 @@
               </div>
           </div>
       </div>
-      <a href="https://www.facebook.com/media/set/?set=a.418041848262563.97240.132937266773024&type=3" target="_blank" class="btn btn-outline-primary btn-lightBlue mt-30">Más fotos de novias en <b>Facebook</b></a>
       <!-- /Gallery -->
     </section>
-    <section class="found_fb">
+    <section class="more-bpics tac">
+      <h3>¿querés ver Más fotos? <a href="https://www.facebook.com/pg/anaanzorena/photos/?tab=albums" target="_blank"><b>mirá nuestro porfolio completo</b></a></h3>
+    </section>
+    <section class="advice">
       <div class="container">
         <div class="row">
-          <div class="col-sm-10 offset-sm-1">
-            <!-- <h2>¿Querés <b>saber más?</b></h2> -->
-            <h3>¿Más sobre <b>maquillaje para novias?</b></h3>
-            <p>Si tenés ganas de conocer más sobre maquillaje para novias, no dudes en escribirnos y consultarnos.</p>
-            <div class="smooth">
-              <a href="#contact" class="btn btn-lg btn-dark" onclick="select_default();">Contactanos</a>
-            </div>
+          <div class="col-lg-10 offset-lg-1">
+            <h2>podemos asesorarte<br><b>en maquillaje para novias</b></h2>
           </div>
+          <div class="col-lg-5 offset-lg-1">
+            <h3>Si tenés ganas de conocer más sobre maquillaje para novias, no dudes en escribirnos y consultarnos.</h3>
+            <div class="smooth">
+              <a href="#contact" onclick="select_default();">contactanos, queremos ayudarte</a>
+            </div>
+          </div> 
         </div>
       </div>
     </section>
@@ -165,11 +186,11 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h2 class="title">Escuela</h2>
+            <h2 class="title">EL MÉTODO ANZORENA</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-5 offset-lg-1 pr-50">
             <div class="automaquillaje cont-tag">
               <img src="images/automaquillaje.png" alt="Automaquillaje">
               <div class="tag">
@@ -190,7 +211,7 @@
               <a href="#contact" class="btn btn-dark" onclick="select_automakeup();">Escribinos <b>ahora!</b></a>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5 pl-50">
             <div class="maquillaje-pro cont-tag">
               <img src="images/maquillaje-profesional.png" alt="Maquillaje Profesional">
               <div class="tag tag-right">

@@ -1,0 +1,37 @@
+.navbar {
+	background: #FFFFFF;
+	font-family: 'Quicksand', sans-serif;
+	padding: .5rem 4rem;
+
+	.navbar-brand {
+		width: 130px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.navbar-nav {
+		.nav-link {
+	    	margin-left: 1.5rem;
+	    	text-transform: uppercase;
+	    	font-weight: 600;
+	    }	
+	}
+
+	.social-nav {
+
+		.nav-link {
+
+			i {
+				color: #AAAAAA;
+			}
+		}
+	}
+
+	.fst-social {
+		margin-left: 50px;
+	}
+}
+
+
