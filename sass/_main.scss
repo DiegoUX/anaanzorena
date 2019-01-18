@@ -84,8 +84,8 @@ h5 {
 		}
 
 		.btn-outline-primary.focus, .btn-outline-primary:focus {
-			    box-shadow: none;
-			}
+		    box-shadow: none;
+		}
 	}
 
 	.main-img {
@@ -189,81 +189,97 @@ h5 {
 		color: #FFF;
 		padding-bottom: 2rem;
 	}	
+
+	img {
+		width: 100%;
+		max-height: 282px;
+	}
+
+	h3 {
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 500;
+		font-size: 1.75rem;
+		color: $light-coral;
+		text-transform: uppercase;
+		margin: 1rem 0;
+	}
+
+	.content-txt {
+		color: #FFF;
+		font-size: 1.25rem;
+		line-height: normal;
+		margin-bottom: 2.5rem;
+		font-weight: 400;
+
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.course-items {
+		padding-left: 15px;
+		margin-bottom: 30px;
+
+		h4 {
+			color: $light-coral;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		p {
+			color: #FFF;
+			font-weight: 500;
+		}
+	}
 }
 
-.cont-tag {
-	position: relative;
-	overflow: hidden;
-	border: 2px solid #EAF2FF;
+.courses-contact {
+	background-color: $coral;
+	padding: 1rem 0;
+	color: #FFF;
+	text-transform: uppercase;
+
+	h5 {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 1rem;
+
+		a {
+			font-weight: 600;
+			color: #FFF;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }
 
-.cont-tag .tag {
-	font-size: 1.5rem;
-    left: 0px;
-    line-height: 23px;
-    position: absolute;
-    text-align: left;
-    top: 85%;
-}
+// MercadoPago...
+.paym {
+	background-color: #e5e5e5;
+	padding: 3.5rem 0;
 
-.cont-tag .tag-right {
-	text-align: right;
-	right: 0;
-}
+	.paymethod {
+		h4 {
+			font-family: 'Quicksand', sans-serif;
+			text-transform: uppercase;
+			color: #333;
+			font-size: 1.8rem;
+			line-height: normal;
 
-.cont-tag .tag span {
-	color: #007bff;
-	background-color: #EAF2FF;
-    padding: 8px 16px;
-}
+			span {
+				color: $coral;
+				font-weight: 600;
+			}
+		}
+	}
 
-.automaquillaje img,
-.maquillaje-pro img {
-	width: 100%;
-	max-height: 369px;
-	transition: 0.8s ease;
-}
-
-.automaquillaje img:hover,
-.maquillaje-pro img:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
- }   
-
-.content-txt p {
-    text-align: left;
-    margin-top: 30px;
-    line-height: 28px;
-}
-
-#school ul {
-	text-align: left;
-	margin-top: 40px;
-	list-style: none;
-	position: relative;
-}
-
-#school ul li {
-	margin-bottom: 30px;
-	color: #666;
-	line-height: 26px;
-}
-
-#school ul li b {
-	font-weight: 600;
-}
-
-#school ul i.material-icons {
-    position: absolute;
-    left: 5px;
-}
-
-#school ul i.material-icons.lightBlue600 { 
-	color: #007bff; 
-	/*color: #377dff;*/
-	padding: 3px;
-    border-radius: 50%;
-    background-color: #EAF2FF;
+	.mp-logo {
+		margin-top: 20px;
+		img {
+			width: 170px;
+		}
+	}
 }
 
 #school .contact-us-courses {
