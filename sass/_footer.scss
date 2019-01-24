@@ -1,6 +1,6 @@
 #contact {
 	padding: 3.5rem 0;
-	background: url('../images/footer-bg.png') no-repeat;
+	background: url('../images/footer-bg.png') no-repeat scroll 0 0 transparent;
 	background-size: cover;
 
 	.title {
@@ -26,15 +26,6 @@
 				box-shadow: 0 0 0 0.2rem rgba(230, 136, 125, .35);
 			}
 		}
-
-		// select {
-		// 	padding: 10px 16px; /* Firefox */
-		// 	height: 38px;  /* Chrome & Safari */
-		// 	-webkit-border-radius: 1px;
-		// 	border: 0;
-		// 	outline: 1px inset #fff;
-		// 	outline-offset: -1px;
-		// }
 	}
 
 	.help-block.with-errors {
@@ -44,20 +35,23 @@
 	}
 
 	.req-fields {
-		color: #000;
+		color: $coral;
 		font-size: 0.8rem;
+		text-shadow: 1px 1px 1px #222;
 	}
 
 	.btn-main {
-		color: $coral;
+		color: #FFF;
 		text-transform: uppercase;
 		padding: .8rem 2rem;
 		border-radius: 0;
 		border-color: $coral;
+		background-color: $coral;
 		
 		&:hover {
 			color: #FFFFFF !important;
-			background: $coral;
+			background: none;
+			border-color: $coral;
 		}
 	}
 

@@ -15,7 +15,7 @@ $(function () {
 /*Smooth Scroll*/
 $(document).ready( function() { 
   $('.smooth a').smoothScroll({
-  	speed: 'auto',
+  	speed: 500,
   	offset:-25,
     // afterScroll: function() {
     //   location.hash = $(this).attr('href');
@@ -31,7 +31,8 @@ var delta = 5;
 var navbarHeight = $('.navbar').outerHeight();
 
 $(window).scroll(function(event){
-    didScroll = true;
+    // didScroll = true;
+    didScroll = false;
 });
 
 setInterval(function() {

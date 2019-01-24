@@ -1,75 +1,63 @@
 <?php
-/*
- *  CONFIGURE EVERYTHING HERE
- */
-
-// an email address that will be in the From field of the email.
-$from = 'Demo contact form <hola@anaanzorena.com>';
-
-// an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <diegonzah@gmail.com>';
-
-// subject of the email
-$subject = 'New message from contact form';
-
-// form field names and their translations.
-// array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'need' => 'Need', 'email' => 'Email', 'message' => 'Message'); 
-
-// message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
-
-// If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
-
-/*
- *  LET'S DO THE SENDING
- */
-
-// if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
-error_reporting(E_ALL & ~E_NOTICE);
-
-try
-{
-
-    if(count($_POST) == 0) throw new \Exception('Form is empty');
-            
-    $emailText = "You have a new message from your contact form\n=============================\n";
-
-    foreach ($_POST as $key => $value) {
-        // If the field exists in the $fields array, include it in the email 
-        if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
-        }
+ 
+if($_POST) {
+    $name = "";
+    $email = "";
+    $tel = "";
+    $info = "";
+    $message = "";
+     
+    if(isset($_POST['name'])) {
+        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
     }
-
-    // All the neccessary headers for the email.
-    $headers = array('Content-Type: text/plain; charset="UTF-8";',
-        'From: ' . $from,
-        'Reply-To: ' . $from,
-        'Return-Path: ' . $from,
-    );
-    
-    // Send email
-    mail($sendTo, $subject, $emailText, implode("\n", $headers));
-
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
+     
+    if(isset($_POST['email'])) {
+        $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
+        $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+    }
+     
+    if(isset($_POST['tel'])) {
+        $tel = filter_var($_POST['tel'], FILTER_SANITIZE_STRING);
+    }
+     
+    if(isset($_POST['info'])) {
+        $info = filter_var($_POST['info'], FILTER_SANITIZE_STRING);
+    }
+     
+    if(isset($_POST['message'])) {
+        $message = htmlspecialchars($_POST['message']);
+    }
+     
+    // if($concerned_department == "billing") {
+    //     $recipient = "billing@domain.com";
+    // }
+    // else if($concerned_department == "marketing") {
+    //     $recipient = "marketing@domain.com";
+    // }
+    // else if($concerned_department == "technical support") {
+    //     $recipient = "tech.support@domain.com";
+    // }
+    // else {
+    //     $recipient = "contact@domain.com";
+    // }
+    $recipient = "diegonzah@gmail.com";
+     
+    $headers  = 'MIME-Version: 1.0' . "\r\n"
+    .'Content-type: text/html; charset=utf-8' . "\r\n"
+    .'De: ' . $email . "\r\n"
+    .'Nombre: '.$name."\r\n\r\n"
+    .'Teléfono: ' . $tel . "\r\n"
+    .'Me interesa saber sobre: ' . $info . "\r\n"
+    .$message."\r\n\r\n";
+     
+    if(mail($recipient, $message, $headers)) {
+        echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+    } else {
+        echo '<p>We are sorry but the email did not go through.</p>';
+    }
+     
+} else {
+    echo '<p>Something went wrong</p>';
 }
-catch (\Exception $e)
-{
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
-}
-
-
-// if requested by AJAX request return JSON response
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    $encoded = json_encode($responseArray);
-
-    header('Content-Type: application/json');
-
-    echo $encoded;
-}
-// else just display the message
-else {
-    echo $responseArray['message'];
-}
+ 
+?>
