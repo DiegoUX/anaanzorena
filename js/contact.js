@@ -12,11 +12,11 @@ $(function () {
 
         // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
-            var url = "../php/contact.php";
+            var url = "../php/handler.php";
 
             // POST values in the background the the script URL
             $.ajax({
-                type: 'post',
+                type: 'POST',
                 url: url,
                 data: $(this).serialize(),
                 success: function (data)
