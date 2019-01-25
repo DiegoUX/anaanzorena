@@ -1,3 +1,10 @@
+@media only screen and (min-width:992px) {
+	.advice {
+		background-position: 80% top;
+	}
+}	
+
+
 @media only screen and (max-width:1199px) {
 	
 	.navbar {
@@ -407,3 +414,15 @@
 	}
 }
 
+@media only screen and (max-width:359px) {
+	h2.title {
+		font-size: 2.3rem;
+		line-height: 40px !important;
+	}
+
+	.advice {
+		h2 {
+			font-size: 2.3rem;
+		}
+	}
+}	
