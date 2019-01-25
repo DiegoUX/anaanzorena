@@ -25,9 +25,9 @@ $subject = 'New message from contact form';
 
 // smtp credentials and server
 
-$smtpHost = 'smtp.domain.com';
-$smtpUsername = 'hello@domain.com';
-$smtpPassword = 'PASSWORD';
+$smtpHost = 'smtp.gmail.com';
+$smtpUsername = 'herrandodiego@gmail.com';
+$smtpPassword = 'Y2Kstudio';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -67,7 +67,7 @@ try {
     
     $mail->setFrom($fromEmail, $fromName);
     $mail->addAddress($sendToEmail, $sendToName); // you can add more addresses by simply adding another line with $mail->addAddress();
-    $mail->addReplyTo($from);
+    // $mail->addReplyTo($from);
     
     $mail->isHTML(true);
     
@@ -82,14 +82,15 @@ try {
     // 0 = off (for production use)
     // 1 = client messages
     // 2 = client and server messages
-    $mail->SMTPDebug = 0;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = 'html';
     
     //Set the hostname of the mail server
     // use
     // $mail->Host = gethostbyname('smtp.gmail.com');
     // if your network does not support SMTP over IPv6
-    $mail->Host = gethostbyname($smtpHost);
+    // $mail->Host = gethostbyname($smtpHost);
+    $mail->Host = gethostbyname('smtp.gmail.com');
     
     //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
     $mail->Port = 587;

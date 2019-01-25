@@ -14,25 +14,25 @@ require 'PHPMailer-master/src/PHPMailer.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'diegonzah@gmail.com';
-$fromName = 'Demo contact form';
+$fromEmail = 'diego@grafo.com.ar';
+$fromName = 'Formulario de contacto de http://anaanzorena.com';
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'diegonzah@gmail.com';
-$sendToName = 'Demo contact form';
+$sendToEmail = 'diego@grafo.com.ar';
+$sendToName = 'Formulario de contacto de http://anaanzorena.com';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'Nuevo mensaje desde Contacto - Ana Anzorena';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Nombre', 'email' => 'Email', 'tel' => 'Teléfono', 'info' => 'Más info sobre', 'message' => 'Mensaje');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Tu mensaje fue enviado correctamente. Gracias, te responderemos a la brevedad!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$errorMessage = 'Hubo un error al enviar tu mensaje. Por favor intenta nuevamente.';
 
 /*
 *  LET'S DO THE SENDING
@@ -46,7 +46,7 @@ try
     
     if(count($_POST) == 0) throw new \Exception('Form is empty');
     
-    $emailTextHtml = "<h1>You have a new message from your contact form</h1><hr>";
+    $emailTextHtml = "<h2>Tienes un nuevo mensaje desde Contacto en tu sitio</h2><hr>";
     $emailTextHtml .= "<table>";
     
     foreach ($_POST as $key => $value) {
@@ -56,7 +56,7 @@ try
         }
     }
     $emailTextHtml .= "</table><hr>";
-    $emailTextHtml .= "<p>Have a nice day,<br>Best,<br>Ondrej</p>";
+    // $emailTextHtml .= "<p>Have a nice day,<br>Best,<br>Ondrej</p>";
     
     $mail = new PHPMailer(true);
     

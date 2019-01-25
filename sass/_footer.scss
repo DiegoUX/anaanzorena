@@ -26,6 +26,13 @@
 				box-shadow: 0 0 0 0.2rem rgba(230, 136, 125, .35);
 			}
 		}
+
+		.btn.disabled,
+		.btn:disabled {
+			opacity: .65;
+		    background-color: #999!important;
+		    border-color: #999!important;
+		}
 	}
 
 	.help-block.with-errors {
@@ -35,7 +42,7 @@
 	}
 
 	.req-fields {
-		color: $coral;
+		color: #FFF;
 		font-size: 0.8rem;
 		text-shadow: 1px 1px 1px #222;
 	}
@@ -93,6 +100,12 @@
 					}
 				}
 			}
+		}
+	}
+
+	.messages {
+		.alert {
+			margin-top: 20px;
 		}
 	}
 }
