@@ -26,7 +26,7 @@ $subject = 'Nuevo mensaje desde Contacto - Ana Anzorena';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Nombre', 'email' => 'Email', 'tel' => 'Teléfono', 'info' => 'Más info sobre', 'message' => 'Mensaje');
+$fields = array('name' => 'Nombre', 'email_real' => 'Email', 'tel' => 'Teléfono', 'info' => 'Más info sobre', 'message' => 'Mensaje');
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Tu mensaje fue enviado correctamente. Gracias, te responderemos a la brevedad!';
@@ -45,6 +45,14 @@ try
 {
     
     if(count($_POST) == 0) throw new \Exception('Form is empty');
+
+    // robot detection
+      $honeypot = trim($_POST["email"]);     
+
+      if(!empty($honeypot)) {
+        echo "BAD ROBOT!"; 
+        exit;
+      }
     
     $emailTextHtml = "<h2>Tienes un nuevo mensaje desde Contacto en tu sitio</h2><hr>";
     $emailTextHtml .= "<table>";
