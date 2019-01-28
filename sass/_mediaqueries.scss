@@ -150,6 +150,22 @@
 		}
 	}
 
+	#testimonials {
+		.carousel {
+			height: 230px;
+			padding-left: 30px;
+			padding-right: 30px;
+
+			.carousel-control-next {
+				right: -60px;
+			}
+
+			.carousel-control-prev {
+				left: -55px
+			}
+		}
+	}
+
 	#contact {
 		.contact-info {
 			margin-top: 50px;
@@ -241,6 +257,12 @@
 		a {
 			text-align: center;
 			margin-bottom: 50px;
+		}
+	}
+
+	#testimonials {
+		.carousel {
+			height: 270px;
 		}
 	}
 
@@ -387,6 +409,10 @@
 			line-height: 50px;
 			margin-bottom: 0;
 		}
+
+		.carousel {
+			height: 350px;
+		}
 	}
 
 	#contact {
@@ -423,6 +449,11 @@
 	.advice {
 		h2 {
 			font-size: 2.3rem;
+		}
+	}
+	#testimonials {
+		.carousel {
+			height: 385px;
 		}
 	}
 }	

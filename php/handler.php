@@ -14,11 +14,11 @@ require 'PHPMailer-master/src/PHPMailer.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'diego@grafo.com.ar';
+$fromEmail = 'hola@anaanzorena.com';
 $fromName = 'Formulario de contacto de http://anaanzorena.com';
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'diego@grafo.com.ar';
+$sendToEmail = 'hola@anaanzorena.com';
 $sendToName = 'Formulario de contacto de http://anaanzorena.com';
 
 // subject of the email
