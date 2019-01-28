@@ -359,7 +359,6 @@ h5 {
 #testimonials {
 	.carousel {
 		padding-top: 30px;
-		height: 245px;
 		
 		.carousel-indicators {
 		    bottom: -50px;
@@ -450,6 +449,8 @@ h5 {
 	padding: 3.5rem 0 6.5rem;
 
 	.carousel {
+		height: 245px;
+		
 		.carousel-inner {
 
 			.testimonial {

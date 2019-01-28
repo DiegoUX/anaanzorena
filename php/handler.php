@@ -28,6 +28,9 @@ $subject = 'Nuevo mensaje desde Contacto - Ana Anzorena';
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Nombre', 'email_real' => 'Email', 'tel' => 'Teléfono', 'info' => 'Más info sobre', 'message' => 'Mensaje');
 
+// Replay To button
+$rep_to = ($_POST['email_real']);
+
 // message that will be displayed when everything is OK :)
 $okMessage = 'Tu mensaje fue enviado correctamente. Gracias, te responderemos a la brevedad!';
 
@@ -68,9 +71,11 @@ try
     
     $mail = new PHPMailer(true);
     
-    $mail->setFrom($fromEmail, $fromName);
+    $mail->addReplyTo($rep_to);
+    // $mail->setFrom($fromEmail, $fromName);
     $mail->addAddress($sendToEmail, $sendToName); // you can add more addresses by simply adding another line with $mail->addAddress();
-    // $mail->addReplyTo($from);
+    $mail->setFrom($fromEmail, $fromName);
+    // $mail->addReplyTo($rep_to);
     
     $mail->isHTML(true);
     
